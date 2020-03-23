@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="CSS/book.css">
+  <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/services.css">
+    <link rel="stylesheet" href="CSS/book.css">
+    <link rel="stylesheet" href="w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+ 
+
+  .column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+</style>
+</head>
+<body>
+    <div class="header">
+    <h2 class="logo">Heritage Hotels</h2>
+    <input type="checkbox" id="chk">
+
+    <ul class="menu">
+      <a href="http://localhost/HOTEL/welcome.php">Home</a>
+      <!--<a href="book.html">accommodation</a>-->
+      <a href="services.html">Services</a>
+      <!--<a href="reg.html">Sign up</a>
+      <a href="http://localhost/HOTEL/Login.php">Login</a>-->
+    </ul>
+  </div>
+  <div class="slide s1">
+          <img src="images\delux room.jpg" alt="">
+        </div>
+        
+
+<h1 style="text-align:center"> Rooms </h1>
+    <p style="text-align: center;">Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p>
+
+    <div class="w3-container w3-red">
+<h2><i class="fa fa-bed "></i>Heritage Hotel</h2></div>
+<div class="w3-container w3-white w3-padding-16">
+
+<form method="post" action="http://localhost/HOTEL/Book.php">
+  <div class="w3-row-padding" style="margin:0 -16px;">
+    <div class="w3-half w3-margin-bottom">
+    <label><i class="fa fa-calendar-o" style="text-align: right;"></i> Check In</label>
+      <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY" name="checkin">
+    </div>
+   <div class="w3-half">
+            <label><i class="fa fa-calendar-o"></i> Check Out</label>
+            <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY" name="checkout">
+          </div>
+        </div>
+   <div class="w3-row-padding" style="margin:8px -16px;">
+          <div class="w3-half w3-margin-bottom">
+            <label></i> First Name</label>
+            <input class="w3-input w3-border" type="text"  name="firstname">
+          </div>
+           <div class="w3-half w3-margin-bottom">
+            <label></i> Last Name</label>
+            <input class="w3-input w3-border" type="text"  name="lastname">
+          </div>
+          <div class="w3-half">
+            <label></i> Contact No.</label>
+          <input class="w3-input w3-border" type="text"  name="Contact">
+          </div>
+           <div class="w3-half w3-margin-bottom">
+            <label></i> Identity Proof</label>
+            <select class="w3-input w3-border" type="text"  name="Proof">
+            	<option value=""></option>
+ 				<option value="Addhar Card">Addhar Card</option>
+  				<option value="PanCard">PanCard</option>
+  				<option value="Voter Id">Voter Id</option>
+  				<option value="Passport">Passport</option>
+			</select>
+          </div>
+          <div class="w3-half w3-margin-bottom">
+            <label></i>Room Type</label>
+            <select class="w3-input w3-border" type="text"  name="room">
+            	<option value=""></option>
+ 				<option value="Single Room">Single Room</option>
+  				<option value="Double Room">Double Room</option>
+  				<option value="Delux Room">Delux Room</option>
+  				<option value="Sweat Room">Sweat Room</option>
+			</select>
+          </div>
+          <div class="w3-half">
+            <label>Payment Using:</label><br>
+            <i class="fa fa-cc-paypal fa-lg" style="color: blue;"></i>
+             <i class="fa fa-cc-visa fa-lg" style="color: purple;"></i>
+              <i class="fa fa-credit-card fa-lg" style="color: none;"></i>
+               <i class="fa fa-cc-amex fa-lg" style="color: tomato;"></i>
+               <i class="fa fa-cc-mastercard fa-lg" style="color: red;"></i>
+          
+          </div>
+        </div>
+        <div class="card">
+        <button type="submit" formaction="http://localhost/HOTEL/Book.php" name="sub">Book Now</button>
+
+</div>
+    </form>
+
+    <br>
+<div class="column">
+<div class="card">
+  <img src="images/hotel5.jpg" alt="Denim Jeans" style="width:100%;height:100%">
+  <h1>Single Room</h1>
+  <p class="price">From :$50</p>
+  <p>Single bed</p>
+  <i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
+  <p><button type="button">Book Now</button></p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="images/hotel5.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Double Room</h1>
+  <p class="price">$100</p>
+  <p>Queen-Size Bed</p>
+  <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+  <p><button>Book Now</button></p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="images/suite.jpeg" alt="Denim Jeans" style="width:100%">
+  <h1>Delux Room</h1>
+  <p class="price">$500</p>
+  <p>King-size bed</p>
+ <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+  <p><button>Book Now</button></p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="images/hotel6.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Superem Room</h1>
+  <p class="price">$2000</p>
+  <p>Queen-Size Bed</p>
+  <i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+  <p><button>Book Now</button></p>
+</div>
+</div>
+
+</body>
+</html>
